@@ -154,6 +154,8 @@ body {
 
 /* FOOTER */
 .footer {
+  display: flex;
+  text-align: center;
   color: var(--softblue);
   font-size: 0.8rem;
 }
