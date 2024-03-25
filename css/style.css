@@ -47,35 +47,31 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.img__container:hover {
-  background: var(--cyan);
-  cursor: pointer;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* top: 0;
-  left: 0; */
-  transform: translate(50%, 50%);
-}
-
 .card__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   margin-bottom: 1.2rem;
+  cursor: pointer;
 }
 
-.card__icon:hover {
+.overlay {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 330px;
+  width: 330px;
+  transform: translate(0, -106%);
+  border-radius: 10px;
+  transition: all 0.2s;
   cursor: pointer;
-  /* background: url(/images/icon-view.svg); */
-  /* visibility: visible; */
-  /* position: relative; */
+}
+
+.overlay:hover {
+  background-color: hsl(178, 100%, 50%, 50%);
+  opacity: 1;
+  background-image: url(/images/icon-view.svg);
 }
 
 .coin__title {
@@ -84,6 +80,7 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1.2rem;
   transition: all 0.2s;
+  max-width: 200px;
 }
 
 .coin__title:hover {
