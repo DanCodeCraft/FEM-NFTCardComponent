@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="card__container">
+      <!-- Card -->
+      <div class="img__container">
+        <img
+          class="card__icon"
+          src="images/image-equilibrium.jpg"
+          alt="Ethereal logo"
+        />
+        <div class="overlay">
+          <img class="view__icon" src="images/icon-view.svg" alt="" />
+        </div>
+      </div>
+      <h1 class="coin__title">Equilibrium #3429</h1>
+      <p class="coin__desc">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <!-- Currency -->
+      <div class="currency">
+        <div class="currency__value">
+          <img
+            src="images/icon-ethereum.svg"
+            alt="Ethereal thumbnail"
+            class="coin__icon"
+          />
+          <p class="coin__value">0.041 ETH</p>
+        </div>
+
+        <div class="currency__timer">
+          <img src="images/icon-clock.svg" alt="" class="timer" />
+          <p class="time__left">3 days left</p>
+        </div>
+      </div>
+      <hr class="line" />
+      <!-- Author -->
+      <div class="author__container">
+        <img src="images/image-avatar.png" alt="" class="author__avatar" />
+        <p class="author__name">
+          Creation of <span class="author__name--span">Jules Wyvern</span>
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/DanCodeCraft"
+          >Adann Jacinto</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
