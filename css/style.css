@@ -40,11 +40,12 @@ body {
 .card__container {
   display: flex;
   flex-direction: column;
-  max-width: 375px;
+  max-width: 350px;
   border-radius: 16px;
   padding: 1.5rem;
   background-color: var(--darkblue--card);
   margin-bottom: 1.5rem;
+  box-shadow: 0 14px 18px rgb(0, 0, 25);
 }
 
 .card__icon {
@@ -52,7 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   cursor: pointer;
 }
 
@@ -60,9 +61,9 @@ body {
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
-  height: 330px;
-  width: 330px;
-  transform: translate(0, -106%);
+  height: 303px;
+  width: 301px;
+  transform: translate(0, -105%);
   border-radius: 10px;
   transition: all 0.2s;
   cursor: pointer;
@@ -70,14 +71,14 @@ body {
 
 .overlay:hover {
   background-color: hsl(178, 100%, 50%, 50%);
-  opacity: 1;
   background-image: url(/images/icon-view.svg);
+  opacity: 1;
 }
 
 .coin__title {
   color: var(--white);
   font-weight: var(--fw-heavy);
-  font-size: 1.5rem;
+  font-size: 1.2em;
   margin-bottom: 1.2rem;
   transition: all 0.2s;
   max-width: 200px;
@@ -118,20 +119,24 @@ body {
 }
 
 .line {
-  border: 0.5px solid var(--darkblue--line);
-  margin-bottom: 1.2rem;
+  /* border: 0.5px solid var(--darkblue--line); */
+  border: none;
+  height: 1px;
+  background-color: var(--darkblue--line);
+  margin-bottom: 1rem;
 }
 
 .author__container {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1rem;
   color: var(--softblue);
+  font-size: 1rem;
   font-weight: var(--fw-medium);
 }
 
 .author__avatar {
-  width: 40px;
+  width: 35px;
   border: 1px solid var(--white);
   border-radius: 50%;
 }
@@ -147,6 +152,7 @@ body {
   cursor: pointer;
 }
 
+/* FOOTER */
 .footer {
   color: var(--softblue);
   font-size: 0.8rem;
